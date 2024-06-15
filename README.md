@@ -37,7 +37,7 @@ The application focuses on a minimalist and cohesive design. Key design elements
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/yourusername/shopping-list-app`
+1. Clone the repository: `https://github.com/JayWoodroffe/Shopping-List-Android-App.git`
 2. Open the project in Android Studio.
 3. Build and run the app on an Android device or emulator.
 
