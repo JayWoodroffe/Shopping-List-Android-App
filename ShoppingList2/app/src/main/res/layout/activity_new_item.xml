@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/toolbar"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_flower"
+            android:id="@+id/left_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new Item:"
+            android:layout_toEndOf="@id/left_icon"
+            android:layout_marginStart="16dp"
+            android:textSize="25sp"
+            android:id="@+id/tvItemName"
+            android:textColor="@color/black"/>
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+    </RelativeLayout>
+    <!-- TextView -->
+
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Item Name"
+        android:padding="10dp"
+        android:background = "@drawable/border_edittext"/>
+
+    <!-- TextView Dropdown -->
+    <TextView
+        android:id="@+id/textViewDropdownLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Category:"
+        android:textSize="16sp"
+        android:layout_below="@id/etName"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <!-- Spinner (Dropdown List) -->
+    <Spinner
+        android:id="@+id/spinCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDropdownLabel"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:scrollbarSize="40dp"/>
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/etPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/spinCategory"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Estimated Price"
+        android:padding="10dp"
+        android:background = "@drawable/border_edittext"/>
+
+    <!-- EditText -->
+    <EditText
+        android:id="@+id/etDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etPrice"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:padding="10dp"
+        android:background = "@drawable/border_edittext"
+        android:hint="Product Description"/>
+
+    <!-- CheckBox -->
+    <CheckBox
+        android:id="@+id/cbPurchased"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etDescription"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:text="Already Purchased"
+        android:buttonTint="@color/grey"
+        android:backgroundTint="@color/grey"/>
+
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_below="@id/cbPurchased"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="@color/grey"/>
+
+</RelativeLayout>

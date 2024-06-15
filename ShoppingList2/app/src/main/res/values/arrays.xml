@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_categories">
+        <item>Food</item>
+        <item>Education</item>
+        <item>Toiletries</item>
+        <!-- Add more items as needed -->
+    </array>
+
+    <array name="array_categories_all">
+        <item>All</item>
+        <item>Food</item>
+        <item>Education</item>
+        <item>Toiletries</item>
+        <!-- Add more items as needed -->
+    </array>
+</resources>

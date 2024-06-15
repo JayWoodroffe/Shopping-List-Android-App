@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingItemDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey"
+        android:id="@+id/toolbar"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_bee"
+            android:id="@+id/left_icon"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/left_icon"
+            android:textSize="25dp"
+            style="bold"
+            android:textColor="@color/black"
+            android:text="Shopping Item Details"/>
+        <ImageView
+            android:id="@+id/btnBack"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="14dp"
+            android:src="@drawable/ic_back"
+            app:tint="@color/black" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:padding="20dp"
+        >
+
+        <!-- Item Name -->
+        <TextView
+            android:id="@+id/tvItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Item Name:" />
+
+        <TextView
+            android:id="@+id/tvItemNameData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tvItemName"
+            android:layout_marginStart="20dp"
+            android:text="Item Name Data" />
+
+        <!-- Category -->
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemName"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="Category:" />
+
+        <!-- Description -->
+
+        <TextView
+            android:id="@+id/tvCategoryData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvItemNameData"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+            android:layout_toRightOf="@id/tvCategory"
+            android:text="Category Data" />
+
+        <TextView
+            android:id="@+id/tvDesc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategory"
+            android:layout_marginTop="16dp"
+            android:text="Description:"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvDescData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCategoryData"
+            android:layout_toRightOf="@id/tvDesc"
+            android:layout_marginTop="16dp"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:text="Description Data" />
+
+        <!-- Purchased CheckBox -->
+        <CheckBox
+            android:id="@+id/chPurchased"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvDesc"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/grey"
+            android:buttonTint="@color/grey"
+            android:text="Purchased"
+            android:textSize="13sp"/>
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="505dp"
+            android:layout_height="25dp"
+            android:layout_below="@id/chPurchased"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@drawable/border_edittext"
+            android:text="  Price:"
+            />
+
+        <!-- HUF -->
+        <TextView
+            android:id="@+id/tvHUF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrice"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="HUF:" />
+
+        <TextView
+            android:id="@+id/tvHUFData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvPrice"
+            android:layout_toRightOf="@id/tvHUF"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+
+            android:text="HUF Data" />
+
+        <TextView
+            android:id="@+id/tvGBP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHUF"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="GBP:" />
+
+        <TextView
+            android:id="@+id/tvGBPData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHUF"
+            android:layout_toRightOf="@id/tvGBP"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+
+            android:text="GBP Data" />
+
+        <TextView
+            android:id="@+id/tvUSD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGBP"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="USD:" />
+
+        <TextView
+            android:id="@+id/tvUSDData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvGBP"
+            android:layout_toRightOf="@id/tvUSD"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+
+            android:text="USD Data" />
+
+        <TextView
+            android:id="@+id/tvHKD"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUSD"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="HKD:" />
+
+        <TextView
+            android:id="@+id/tvHKDData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvUSD"
+            android:layout_toRightOf="@id/tvGBP"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+
+            android:text="HKD Data" />
+        <TextView
+            android:id="@+id/tvZAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHKD"
+            android:layout_marginTop="16dp"
+            android:textStyle="bold"
+            android:text="ZAR:" />
+
+        <TextView
+            android:id="@+id/tvZARData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvHKD"
+            android:layout_toRightOf="@id/tvGBP"
+            android:layout_alignStart="@id/tvItemNameData"
+            android:layout_marginTop="16dp"
+
+            android:text="ZAR Data" />
+
+    </RelativeLayout>
+</RelativeLayout>
