@@ -69,6 +69,6 @@ The application focuses on a minimalist and cohesive design. Key design elements
 <img src="./images/filter_toiletries.jpeg" width="300">
 
 ### Filtering by Food
-<img src="./images/filter_food.jpeg" width="300">
+<img src="./images/filter food.jpeg" width="300">
 
 
