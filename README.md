@@ -52,7 +52,7 @@ The application focuses on a minimalist and cohesive design. Key design elements
 
 | Loading Activity | Shopping List Activity | New Item Activity |
 |------------------|------------------------|-------------------|
-| <img src="./images/loading.jpeg" width="250"> | <img src="./images/shopping_list.jpg" width="250"> | <img src="./images/new_item.jpeg" width="250"> |
+| <img src="./images/loading.jpeg" width="250"> | <img src="./images/shopping_list.jpeg" width="250"> | <img src="./images/new_item.jpeg" width="250"> |
 
 | Item Details | Filter: All | Filter: Toiletries |
 |--------------|-------------|---------------------|
