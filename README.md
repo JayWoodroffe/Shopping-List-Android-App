@@ -24,15 +24,15 @@ The application focuses on a minimalist and cohesive design. Key design elements
 
 ## Features
 
-1. **Back Button Confirmation**:
-   - When the user tries to return to the shopping list activity before finishing a new item, a confirmation dialog is displayed to confirm if they wish to discard the item and return.
+1. **Back Button Confirmation**  
+   When the user tries to return to the shopping list activity before finishing a new item, a confirmation dialog is displayed to confirm if they wish to discard the item and return.
 
-2. **Filtering by Category**:
-   - In the shopping list activity, users can filter items by category using a spinner below the toolbar. Items are filtered immediately when a new category is selected.
+2. **Filtering by Category**  
+   In the shopping list activity, users can filter items by category using a spinner below the toolbar. Items are filtered immediately when a new category is selected.
 
 ## Technologies Used
 
-- **Front End and Logic**: Android Studio, Kotlin, XML
+- **Front End and Logic**: Android Studio, Kotlin, XML  
 - **Back End and Data Storage**: Local Storage
 
 ## Installation
@@ -43,32 +43,21 @@ The application focuses on a minimalist and cohesive design. Key design elements
 
 ## Usage
 
-1. **Add Items**: Enter item details and add them to the shopping list.
-2. **Filter Items**: Use the category filter to view items by specific categories.
-3. **Edit/Delete Items**: Edit or delete items as needed.
+1. **Add Items**: Enter item details and add them to the shopping list.  
+2. **Filter Items**: Use the category filter to view items by specific categories.  
+3. **Edit/Delete Items**: Edit or delete items as needed.  
 4. **Back Button Confirmation**: Confirm discarding changes when navigating back from the new item activity.
 
 ## Screenshots
 
-### Loading Activity
-<img src="./images/loading.jpeg" width="300">
+| Loading Activity | Shopping List Activity | New Item Activity |
+|------------------|------------------------|-------------------|
+| <img src="./images/loading.jpeg" width="250"> | <img src="./images/shopping_list_activity.jpg" width="250"> | <img src="./images/new_item.jpeg" width="250"> |
 
-### Shopping List Activity
-<img src="./images/shopping_list_activity.jpg" width="300">
+| Item Details | Filter: All | Filter: Toiletries |
+|--------------|-------------|---------------------|
+| <img src="./images/details.jpeg" width="250"> | <img src="./images/filter.jpeg" width="250"> | <img src="./images/filter_toiletries.jpeg" width="250"> |
 
-### New Item Activity
-<img src="./images/new_item.jpeg" width="300">
-
-### Item Details
-<img src="./images/details.jpeg" width="300">
-
-### Filtering by Category
-<img src="./images/filter.jpeg" width="300">
-
-### Filtering by Toiletries
-<img src="./images/filter_toiletries.jpeg" width="300">
-
-### Filtering by Food
-<img src="./images/filter food.jpeg" width="300">
-
-
+| Filter: Food |
+|--------------|
+| <img src="./images/filter food.jpeg" width="250"> |
